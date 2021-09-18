@@ -19,6 +19,6 @@ npm start
 **Number must be without the country code**
 
 ## Planned Features
-> - Scheduled Messages Will Add Soon
+> - Scheduled Messages Will Add Soon (Usable but on testing)
 > - App Design Will Be Changed
 > - Change country code "Default is Turkey Now"
