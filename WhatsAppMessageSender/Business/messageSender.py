@@ -4,6 +4,7 @@ import pywhatkit as pkit
 from Business import fileReader
 from Entities import contact
 
+# These are my best settings, they can change by internet quality
 wait_time = 5
 tab_close = True
 close_time = 2
