@@ -5,9 +5,9 @@ const { ipcRenderer } = electron;
 
 let sendImmediatelyBtn = document.querySelector("#sendImmediatelyBtn");
 let uploadBtn = document.querySelector("#uploadBtn");
-
+let pathWay = document.querySelector("#pathWay");
 let inputValue = document.querySelector("#message");
-global.contactValue = "Dosya Yolu Bulunamadı";
+global.contactValue = "";
 
 uploadBtn.addEventListener("click", () => {
   ipcRenderer.send("open-file-dialog-for-file");
@@ -15,10 +15,15 @@ uploadBtn.addEventListener("click", () => {
 
 ipcRenderer.on("selected-file", function (event, path) {
   contactValue = path;
+  pathWay.value = contactValue;
 });
 
 sendImmediatelyBtn.addEventListener("click", () => {
   //ipcRenderer.send("key", "DENEME");
+  if (contactValue === "") {
+    pathWay.value = "Lütfen Uygun Bir Kişi Listesi Seçiniz!"
+    return;
+  }
   sendMessageInfo(inputValue.value, contactValue);
 });
 
