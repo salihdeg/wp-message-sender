@@ -13,6 +13,7 @@ npm start
 ## Sample Excel File
 
 | Name      | Number |
+| ------------- | ------------- |
 | Sample Name      | 5301112233       |
 
 **Number must be without the country code**
