@@ -6,7 +6,7 @@ const { Menu, app, BrowserWindow, ipcMain, dialog } = require("electron");
 
 let mainWindow;
 // 800* 650
-
+process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 app.on("ready", () => {
   mainWindow = new BrowserWindow({
     webPreferences: {
