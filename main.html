@@ -22,118 +22,120 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
-
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <!-- Hemen Mesaj -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseOne"
-            aria-expanded="false"
-            aria-controls="flush-collapseOne"
-          >
-            Hemen Toplu Mesaj Gönder
-          </button>
-        </h2>
-        <div
-          id="flush-collapseOne"
-          class="accordion-collapse collapse"
-          aria-labelledby="flush-headingOne"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            <div class="mb-3">
-              <label for="instantMessage" class="form-label">Mesajınızı Girin: </label>
-              <textarea class="form-control" id="instantMessage" rows="3"></textarea>
-            </div>
-            <div class="mb-3">
-              <button id="uploadBtn">Kişi Listesi Yükle</button>
-              <input
-                type="text"
-                readonly
-                class="form-control-plaintext"
-                id="pathWay"
-                value=""
-              />
-            </div>
-            <!-- <input type="file" id="contacts" accept="Excel/xlsx" /> -->
-
-            <button class="btn btn-primary" id="sendImmediatelyBtn">
-              Gönder
+    <div class="container">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <!-- Hemen Mesaj -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Hemen Toplu Mesaj Gönder
             </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <div class="mb-3">
+                <label for="instantMessage" class="form-label">Mesajınızı Girin: </label>
+                <textarea class="form-control" id="instantMessage" rows="3"></textarea>
+              </div>
+              <div class="mb-3">
+                <button id="uploadBtn">Kişi Listesi Yükle</button>
+                <input
+                  type="text"
+                  readonly
+                  class="form-control-plaintext"
+                  id="pathWay"
+                  value=""
+                />
+              </div>
+              <!-- <input type="file" id="contacts" accept="Excel/xlsx" /> -->
+  
+              <button class="btn btn-primary" id="sendImmediatelyBtn">
+                Gönder
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Zamanlı Mesaj -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseTwo"
-            aria-expanded="false"
-            aria-controls="flush-collapseTwo"
+        <!-- Zamanlı Mesaj -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              Zamanlı Mesaj Gönder
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
           >
-            Zamanlı Mesaj Gönder
-          </button>
-        </h2>
-        <div
-          id="flush-collapseTwo"
-          class="accordion-collapse collapse"
-          aria-labelledby="flush-headingTwo"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            <div class="mb-3">
-              <label for="timedMessage" class="form-label">Mesajınızı Girin: </label>
-              <textarea class="form-control" id="timedMessage" rows="3"></textarea>
-              <label for="timeHour" class="form-label">Saati Girin: </label>
-              <input type="number" class="form-control" id="timeHour"></input>
-              <label for="timeMin" class="form-label">Dakikayı Girin: </label>
-              <input type="number" class="form-control" id="timeMin"></input>
+            <div class="accordion-body">
+              <div class="mb-3">
+                <label for="timedMessage" class="form-label">Mesajınızı Girin: </label>
+                <textarea class="form-control" id="timedMessage" rows="3"></textarea>
+                <label for="timeHour" class="form-label">Saati Girin: </label>
+                <input type="number" class="form-control" id="timeHour"></input>
+                <label for="timeMin" class="form-label">Dakikayı Girin: </label>
+                <input type="number" class="form-control" id="timeMin"></input>
+              </div>
+              <div class="mb-3">
+                <button id="timedUploadBtn">Kişi Listesi Yükle</button>
+                <input
+                  type="text"
+                  readonly
+                  class="form-control-plaintext"
+                  id="timedPathWay"
+                  value=""
+                />
+              </div>
+              <button class="btn btn-primary" id="sendTimedBtn">Gönder</button>
             </div>
-            <div class="mb-3">
-              <button id="timedUploadBtn">Kişi Listesi Yükle</button>
-              <input
-                type="text"
-                readonly
-                class="form-control-plaintext"
-                id="timedPathWay"
-                value=""
-              />
-            </div>
-            <button class="btn btn-primary" id="sendTimedBtn">Gönder</button>
           </div>
         </div>
-      </div>
-      <!-- Resimli Mesaj -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseThree"
-            aria-expanded="false"
-            aria-controls="flush-collapseThree"
+        <!-- Resimli Mesaj -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Resim Gönder
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
           >
-            Resim Gönder
-          </button>
-        </h2>
-        <div
-          id="flush-collapseThree"
-          class="accordion-collapse collapse"
-          aria-labelledby="flush-headingThree"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">Hazırlanıyor...</div>
+            <div class="accordion-body">Hazırlanıyor...</div>
+          </div>
         </div>
       </div>
     </div>
+
     <script src="inputSender.js" charset="utf-8"></script>
   </body>
 </html>
