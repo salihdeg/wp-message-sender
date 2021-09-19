@@ -38,6 +38,7 @@ sendImmediatelyBtn.addEventListener("click", () => {
   if (contactValue === "") {
     alert("Lütfen Uygun Bir Kişi Listesi Seçiniz!");
     pathWay.value = "Lütfen Uygun Bir Kişi Listesi Seçiniz!";
+    timedPathWay.value = "Lütfen Uygun Bir Kişi Listesi Seçiniz!";
     return;
   }
   sendMessageInfo(instantMessage.value, contactValue);
@@ -47,6 +48,7 @@ sendTimedBtn.addEventListener("click", () => {
   if (contactValue === "") {
     alert("Lütfen Uygun Bir Kişi Listesi Seçiniz!");
     pathWay.value = "Lütfen Uygun Bir Kişi Listesi Seçiniz!";
+    timedPathWay.value = "Lütfen Uygun Bir Kişi Listesi Seçiniz!";
     return;
   }
   sendMessageInfoWithTime(timedMessage.value, contactValue, timeHour.value, timeMin.value);
