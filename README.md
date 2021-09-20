@@ -29,3 +29,4 @@ npm start
 > - Scheduled Messages Will Add Soon (Usable but on testing)
 > - App Design Will Be Changed
 > - Change country code "Default is Turkey Now"
+> - Choose all contacts option will add soon
