@@ -20,6 +20,11 @@ npm start
 
 **Number must be without the country code**
 
+## Technologies
+
+- pywhatkit
+- electron
+
 ## Planned Features
 > - Scheduled Messages Will Add Soon (Usable but on testing)
 > - App Design Will Be Changed
